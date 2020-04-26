@@ -21,7 +21,7 @@ public class EmployeeDataLoader implements CommandLineRunner {
 
     private void loadData() {
         List<Employee> list = new ArrayList<>();
-        list.add(Employee.builder().empName("Ram").address("Kolkata").salary(new BigDecimal(5000)).build());
+        list.add(Employee.builder().empName("Ramayan").address("Kolkata").salary(new BigDecimal(5000)).build());
         list.add(Employee.builder().empName("Naresh").address("Bihar").salary(new BigDecimal(7500)).build());
         list.add(Employee.builder().empName("Mukesh").address("Nalanda").salary(new BigDecimal(7800)).build());
         list.add(Employee.builder().empName("Abhishek").address("Naktala").salary(new BigDecimal(15000)).build());

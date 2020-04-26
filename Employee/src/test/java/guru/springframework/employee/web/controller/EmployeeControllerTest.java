@@ -47,10 +47,11 @@ class EmployeeControllerTest {
 
     @Test
     void createEmployeeTest() throws Exception {
-        Employee emp = Employee.builder().empId(3).empName("Anik").address("Kolkata").salary(new BigDecimal(4500)).build();
+        Employee emp = Employee.builder().empId(3).empName("Ankita").address("Kolkata").salary(new BigDecimal(999)).build();
         String str = mapper.writeValueAsString(emp);
         mockMvc.perform(post("/api/v1/employee/create").accept(MediaType.APPLICATION_JSON)
-                .contentType(MediaType.APPLICATION_JSON_VALUE).content(str)).andExpect(status().isCreated());
+               .contentType(MediaType.APPLICATION_JSON_VALUE).content(str)).andExpect(status().isCreated());
+
     }
 
     @Test
